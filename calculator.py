@@ -20,4 +20,9 @@ while calculator = True:
             multiply(token[1], token[2])
         elif token[0] == '/':
             divide(token[1], token[2])
+        elif token[0] == 'square':
+            square(token[1],token[2])
+        elif token[0] == 'cube':
+            cube(token[1],token[2])
+        
 
