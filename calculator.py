@@ -14,4 +14,10 @@ while calculator = True:
     else:
         if token[0] == '+':
             add(token[1],token[2])
+        elif token[0] == '-':
+            subtract(token[1], token[2])
+        elif token[0] == '*':
+            multiply(token[1], token[2])
+        elif token[0] == '/':
+            divide(token[1], token[2])
 
