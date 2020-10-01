@@ -3,26 +3,34 @@
 from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
-
 # Replace this with your code
 
-while calculator = True: 
+calculator = True
+while calculator == True: 
     input_string = input('>')
     token = input_string.split(' ')
     if token[0] == 'q':
         calculator = False
     else:
+        a = int(token[1])
+        b = int(token[2])
         if token[0] == '+':
-            add(token[1],token[2])
+            x = add(a, b)
         elif token[0] == '-':
-            subtract(token[1], token[2])
+            x = subtract(a,b)
         elif token[0] == '*':
-            multiply(token[1], token[2])
+            x = multiply(a,b)
         elif token[0] == '/':
-            divide(token[1], token[2])
+            x = divide(a,b)
         elif token[0] == 'square':
-            square(token[1],token[2])
+            x = square(a,b)
         elif token[0] == 'cube':
-            cube(token[1],token[2])
+            x = cube(a,b)
+        elif token[0] == 'pow':
+            x = power(a,b)
+        elif token[0] == 'mod':
+            x = mod(a,b)
+        print(x)
+
         
 
